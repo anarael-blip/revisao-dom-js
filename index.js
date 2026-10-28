@@ -11,7 +11,7 @@ mensagem.innerText = "Bem vindo " + inputTexto.value + "!"
 });
 let caixa = document.getElementById("caixa");
 caixa.addEventListener("mouseover", function(){
-    caixa.style.backgroundColor = "yellow";
+    caixa.style.backgroundColor = "pink";
 });
 caixa.addEventListener("mouseout", function(){
     caixa.style.backgroundColor = "green";
@@ -30,4 +30,9 @@ btn4.addEventListener("click", function(){
     } else {
         caixa.style.display = "none";
     }
+})
+contadorClick = 0;
+let imagem = document.getElementById("imagem");
+imagem.addEventListener("click", function(){
+    imagem.src = "imagem.jpg";
 })
