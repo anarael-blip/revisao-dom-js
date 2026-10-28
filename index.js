@@ -11,8 +11,23 @@ mensagem.innerText = "Bem vindo " + inputTexto.value + "!"
 });
 let caixa = document.getElementById("caixa");
 caixa.addEventListener("mouseover", function(){
-    caixa.style.backgroundColor = "green";
+    caixa.style.backgroundColor = "yellow";
 });
 caixa.addEventListener("mouseout", function(){
-    caixa.style.backgroundColor = "red";
+    caixa.style.backgroundColor = "green";
+})
+let btn3 = document.getElementById("btn3");
+const lista = document.getElementById("lista");
+btn3.addEventListener("click", function(){
+    let novoItem = document.createElement("li");
+    novoItem.innerText = "Novo Item";
+    lista.appendChild(novoItem);
+});
+let btn4 = document.getElementById("btn4");
+btn4.addEventListener("click", function(){
+    if(caixa.style.display === "none"){
+        caixa.style.display = "block";
+    } else {
+        caixa.style.display = "none";
+    }
 })
